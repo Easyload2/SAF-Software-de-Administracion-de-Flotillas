@@ -20,13 +20,13 @@ header {
 }
 
     .logo-container img {
-        width: 80px; /* Ajusta el tama�o de la imagen seg�n tus necesidades */
+        width: 80px; /* Ajusta el tamaño de la imagen según tus necesidades */
     }
 
 .text-container {
     flex: 1;
     text-align: center;
-    margin-left: 20px; /* Ajusta el margen izquierdo seg�n tus necesidades */
+    margin-left: 20px; /* Ajusta el margen izquierdo según tus necesidades */
 }
 /**/
 
@@ -106,12 +106,43 @@ ul {
     }
 
     /*fin precios*/
+    /*testimonios*/
+
+#testimonios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#blockquote {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom:20px;
+}
 
 blockquote {
     background-color: #f5f5f5;
-    padding: 20px;
+    padding: 100px;
     margin-bottom: 20px;
+    margin: 0 20px;
+    position: relative;
+    margin: 0 20px;
+   
 }
+
+    blockquote img {
+        position: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 100px;
+        max-height: 100px;
+        border-radius: 50%;
+    }
 
     blockquote p {
         margin: 0;
@@ -122,43 +153,65 @@ blockquote {
         font-style: normal;
     }
 
+/**/
+
+/*Formulario*/
+
+#formulario {
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px #787475;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 50px auto;
+}
+
 form {
-    margin-top: 20px;
+    max-width: 400px; /* Ajusta el ancho máximo del formulario según tus necesidades */
+    margin: 0 auto; /* Centra horizontalmente el formulario */
 }
 
-label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: 500;
+    form label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: 500;
+        text-align: left;
+    }
+
+    form input[type="submit"] {
+        display: block; /* Coloca las etiquetas y el botón en una línea separada */
+        margin-bottom: 10px; /* Espacio vertical entre etiquetas y campos de entrada */
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin: 0 auto;
+    }
+    input[type="submit"]:hover {
+        background-color: #940404;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-input[type="submit"] {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background-color: #940404;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="tel"] {
+        width: 100%; /* Ajusta el ancho de los campos de entrada al 100% del formulario */
+        padding: 5px; /* Espacio interno para los campos de entrada */
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    /**/
+   
 
 footer {
     background-color: #787475;
