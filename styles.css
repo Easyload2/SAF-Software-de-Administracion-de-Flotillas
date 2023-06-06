@@ -9,18 +9,20 @@ body {
 /*header*/
 header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     background-color: #333;
-    padding: 20px;
+    padding: 0px;
     color: #fff;
 }
 
 .logo-container {
     flex: 0 0 auto;
+    margin-left: 20px;
 }
 
     .logo-container img {
-        width: 80px; /* Ajusta el tamaño de la imagen según tus necesidades */
+        width: 50px; /* Ajusta el tamaño de la imagen según tus necesidades */
     }
 
 .text-container {
@@ -28,15 +30,68 @@ header {
     text-align: center;
     margin-left: 20px; /* Ajusta el margen izquierdo según tus necesidades */
 }
+
+/*menu*/
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    margin-left:200px;
+    padding: 0;
+    display: flex;
+}
+
+    nav ul li {
+        margin-left: 20px;
+    }
+
+        nav ul li:first-child {
+            margin-left: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+nav {
+    text-align: right;
+    margin-left: 200px;
+}
+
+
 /**/
 
+/* titulo*/
+
+#titulo {
+    background-image: url("assets/images/fondo.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height: 1000px;
+    min-height: 400px;
+    font-size: 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-container {
+    text-align: center;
+}
+
+/*Body*/
+
 h1 {
-    font-size: 32px;
+    font-size: 52px;
     margin: 0;
 }
 
 h2 {
-    font-size: 18px;
+    font-size: 32px;
     font-weight: 400;
     margin: 10px 0;
 }
@@ -139,8 +194,8 @@ blockquote {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        max-width: 80px;
-        max-height: 80px;
+        max-width: 100px;
+        max-height: 100px;
         border-radius: 50%;
     }
 
