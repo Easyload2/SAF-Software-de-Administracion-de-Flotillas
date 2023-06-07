@@ -27,7 +27,7 @@ logo-container {
 }
 
     .logo-container img {
-        max-width: 40px; /* Ajusta el tamaño de la imagen según tus necesidades */
+        max-width: 40px; /* Ajusta el tamaÃ±o de la imagen segÃºn tus necesidades */
     }
 .container {
     max-width: auto;
@@ -88,7 +88,7 @@ logo-container {
     /* backgrodund*/
 
 .hero {
-    background-image: url("assets/images/fondo.gif");
+    background-image: url("assets/images/fondo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
@@ -381,7 +381,7 @@ blockquote {
 }
 
 form {
-    max-width: 400px; /* Ajusta el ancho máximo del formulario según tus necesidades */
+    max-width: 400px; /* Ajusta el ancho mÃ¡ximo del formulario segÃºn tus necesidades */
     margin: 0 auto; /* Centra horizontalmente el formulario */
 }
 
@@ -393,7 +393,7 @@ form {
     }
 
     form input[type="submit"] {
-        display: block; /* Coloca las etiquetas y el botón en una línea separada */
+        display: block; /* Coloca las etiquetas y el botÃ³n en una lÃ­nea separada */
         margin-bottom: 10px; /* Espacio vertical entre etiquetas y campos de entrada */
         background-color: #333;
         color: #fff;
