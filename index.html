@@ -1,54 +1,86 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <title>SAF - Sistema de Administración de Flotillas</title>
     <link rel="stylesheet" href="styles.css"> <!-- Enlace a tu archivo CSS -->
+    
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> <!-- Fuente Roboto desde Google Fonts -->
 </head>
 <body>
     <header>
-        <div class="logo-container">
-            <img src="assets/images/logo.png" alt="Software de Administración de Flotilla">
-        </div>
-        <nav>
+    </header>
+
+    <nav class="nav">
+        <div class="container">
+            <div class="logo-container">
+                <img src="assets/images/logo.png" alt="Software de Administración de Flotilla">
+            </div>
             <ul>
-                <li><a href="#beneficios">Beneficios</a></li>
+                <li><a href="#formulario" class="current">SAF</a></li>
                 <li><a href="#caracteristicas">Características</a></li>
                 <li><a href="#precios">Precios</a></li>
                 <li><a href="#testimonios">Testimonios</a></li>
                 <li><a href="#formulario">Pruébalo</a></li>
             </ul>
-        </nav>
-    </header>
-
-    <section id="titulo">
-        <div class="text-container">
-            <h1>Optimiza la gestión de tu flotilla con SAF</h1>
-            <h2>Controla tus operaciones de transporte de manera eficiente y ahorra tiempo y dinero</h2>
         </div>
-    </section>
-        
+    </nav>
+
+    <div class="hero">
+        <div class="container">
+            <h1>Optimiza la gestión de tu flotilla con SAF</h1>
+            <p>Controla tus operaciones de transporte de manera eficiente y ahorra tiempo y dinero</p>
+        </div>
+    </div>
+
+
     <section id="beneficios">
         <h3>Beneficios de SAF</h3>
-        <ul>
-            <li>Gestión integral de viajes y liquidaciones</li>
-            <li>Control GPS en tiempo real para un monitoreo preciso</li>
-            <li>Facturación y cobranza automatizada</li>
-            <li>Ahorro de tiempo y dinero en la administración de la flotilla</li>
-            <li>Eliminación de errores y duplicidades en los procesos</li>
-        </ul>
-        <div id="beneficiosz">
-            <img src="assets/images/bene1.jpg" />
-            <img src="assets/images/bene2.jpg" />
-            <img src="assets/images/bene3.jpg" />
-            <img src="assets/images/bene4.jpg" />
-            <img src="assets/images/bene5.jpg" />
-            <img src="assets/images/bene6.jpg" />
-            <img src="assets/images/bene7.jpg" />
+
+        <div id="bodyfake"class="bodyfake">
+            <div id="slider-container"class="slider-container">
+                <div class="slide active"
+                     style="background-image: url('Assets/images/slyder/slyder0.png');">
+                </div>
+        
+                <div class="slide"
+                     style="background-image: url('Assets/images/slyder/slyder2.png');">
+                </div>
+
+                <div class="slide"
+                     style="background-image: url('Assets/images/slyder/slyder3.png');">
+                </div>
+
+                <div class="slide"
+                     style="background-image: url('Assets/images/slyder/slyder4.png');">
+                </div>
+
+                <div class="slide"
+                     style="background-image: url('Assets/images/slyder/slyder5.png');">
+                </div>
+
+                <button class="arrow left-arrow" id="left">
+                    <p>l</p>
+                </button>
+
+                <button class="arrow right-arrow" id="right">
+                    <p>r</p>
+                </button>
+            </div>
         </div>
+
+    <div id="beneficiosz">
+         <img src="assets/images/bene1.jpg" />
+         <img src="assets/images/bene2.jpg" />
+         <img src="assets/images/bene3.jpg" />
+         <img src="assets/images/bene4.jpg" />
+         <img src="assets/images/bene5.jpg" />
+         <img src="assets/images/bene6.jpg" />
+         <img src="assets/images/bene7.jpg" />
+     </div>
+       
     </section>
 
-    <section id="Caracteristicas">
+    <section id="caracteristicas">
         <h3>Características de SAF</h3>
         <ul>
             <li>Registro y seguimiento de viajes y rutas</li>
@@ -141,7 +173,7 @@
             <input type="submit" value="Enviar">
         </form>
     </section>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
